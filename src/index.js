@@ -375,7 +375,7 @@ module.exports = class Reader extends Component {
           {
             legacyMode
               ? <img style={imgPreviewStyle} ref={this.setRefFactory('img')} onLoad={onImageLoad} />
-              : <video style={videoPreviewStyle} ref={this.setRefFactory('preview')} />
+              : <video style={videoPreviewStyle} ref={this.setRefFactory('preview')} autoPlay playsInline muted/>
           }
 
           <canvas style={hiddenStyle} ref={this.setRefFactory('canvas')} />
